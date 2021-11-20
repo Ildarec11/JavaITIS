@@ -1,5 +1,8 @@
 package ru.kpfu.itis.io.clients;
 
+import ru.kpfu.itis.io.protocols.Message;
+import ru.kpfu.itis.io.protocols.MessageType;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

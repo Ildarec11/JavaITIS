@@ -16,7 +16,7 @@ public class FileReceive {
     public static void main(String[] args) {
         System.out.println("Ready to receive!");
         int port = 1234;
-        String serverRoute = "C:\\Users\\Samat\\Desktop\\storage"; // где будет храниться файл
+        String serverRoute = "/Users/ildar/IdeaProjects/JavaITIS/10. JavaNIO/src/main/java/ru/kpfu/itis/filetransfer"; // где будет храниться файл
         createFile(port, serverRoute); // создание файла
     }
 
