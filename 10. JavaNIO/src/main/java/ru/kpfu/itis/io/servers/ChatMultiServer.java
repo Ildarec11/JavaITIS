@@ -118,6 +118,9 @@ public class ChatMultiServer {
                                 if (historyMsg == null) {
                                     historyMsg = new ArrayList<>();
                                 }
+                                if (historyMsg.size() >= 100) {
+                                    historyMsg.remove(0);
+                                }
                                 historyMsg.add(this.nameClient + ": " + inputMsg.getText());
                                 for (ClientHandler client : roommates) {
                                     PrintWriter out = new PrintWriter(client.clientSocket.getOutputStream(), true);
